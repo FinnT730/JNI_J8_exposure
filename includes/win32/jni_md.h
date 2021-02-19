@@ -34,7 +34,7 @@
 
 // 'long' is always 32 bit on windows so this matches what jdk expects
 typedef long jint;
-typedef __int64_t jlong;
+typedef __int64_t jlong; // Changed __int64 to __int64_t so everything compiles (on my machine at least. If it need to be changed back, you can.).
 typedef signed char jbyte;
 
 #endif /* !_JAVASOFT_JNI_MD_H_ */
